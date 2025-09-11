@@ -3,12 +3,14 @@ import AddRecipeForm from './components/AddRecipeForm';
 import RecipeList from './components/RecipeList';
 import RecipeDetails from './components/RecipeDetails';
 import EditRecipeForm from './components/EditRecipeForm';
+import SearchBar from './components/SearchBar';
 
 function Home() {
   return (
     <>
       <h1>Recipe Sharing App</h1>
       <AddRecipeForm />
+      <SearchBar />   {/* ✅ Added here */}
       <RecipeList />
     </>
   );
