@@ -20,11 +20,12 @@ const EditRecipeForm = () => {
 
   if (!recipe) return <p>Recipe not found.</p>;
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    updateRecipe(recipe.id, { title, description });
-    navigate(`/recipes/${recipe.id}`);
-  };
+  const handleSubmit = (event) => {
+  event.preventDefault();   // ✅ use "event" not "e"
+  updateRecipe(recipe.id, { title, description });
+  navigate(`/recipes/${recipe.id}`);
+};
+
 
   return (
     <form onSubmit={handleSubmit} style={{ padding: 16 }}>
