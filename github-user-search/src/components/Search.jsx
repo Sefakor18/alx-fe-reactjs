@@ -18,7 +18,7 @@ export default function Search() {
     const data = await fetchUserData(q);
     setLoading(false);
 
-    if (!data) setError("Looks like we can't find the user");
+    if (!data) setError("Looks like we cant find the user");
     else setUser(data);
   };
 
