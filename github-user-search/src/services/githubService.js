@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://api.github.com";
+const BASE_URL = "https://api.github.com/search/users?q";
 
 // Fetch single user (by username)
 export const fetchUserData = async (username) => {
